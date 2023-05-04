@@ -1,0 +1,432 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+*::-webkit-scrollbar {
+  width: 0px;
+}
+body{
+  background-color: #1c1c1e;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#left-container{
+  display: block;
+  height: 900px;
+  width: 400px;
+  margin-top: 1.4rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
+  background-color: white;
+  justify-content: space-between;
+  background: transparent;
+}
+
+
+#mid-container{
+  display: block;
+  background-color: #bebcb8;
+  width: 1010px;
+  height: 900px;
+  margin-top: 1.4rem;
+  border-radius: 20px 20px 80px 20px;
+}
+.menuPadrao{
+  background-color: #444443;
+  border: 1px solid #000;
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+.formulario{
+  width: 90%;
+  height: 7%;
+  margin: auto;
+  text-align: center;
+}
+.input__search{
+  width: 80%;
+  text-align: center;
+  padding: 0.5%;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: 600;
+  color: black;
+  margin-top: 1.1rem;
+}
+.allPokemons{
+  width: 90%;
+  height: 90%;
+  margin: 1rem 1rem 1rem 1rem;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 600;
+  overflow: auto;
+  
+}
+#pokemon-list > li{
+  padding: 2%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  border: 1px solid black;
+  width: 90%;
+  margin: auto;
+  margin-top: 2%;
+  text-transform: capitalize;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  color: #fff;
+  backdrop-filter: blur(20px);
+  background: transparent;
+}
+
+.imageBG{
+  background-image: url("/img/fundos/bg5.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 870px;
+  height: 500px;
+  margin-top: 3%;
+  margin-left: 7%;
+  border: 30px solid rgb(36, 35, 35);
+  border-radius: 10px 10px 80px 10px;
+}
+
+.pokemon__image{
+  position: absolute;
+  left: 45%;
+  bottom: 53%;
+  width: 8%;
+  
+}
+.pokemon__data{
+  position: absolute;
+  left: 44%;
+  bottom: 37%;
+}
+.buttons{
+  position: absolute;
+  left: 49%;
+  bottom: 34%;
+}
+
+
+.evolutions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: absolute;
+  color: #000;
+  align-items: center;
+  flex-direction: row;
+}
+
+.evolutions ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.evolutions li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+
+.evolutions span {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+
+.buttons{
+  position: absolute;
+  top: 70%;
+  left: 59%;
+  transform: rotate(-30deg);
+}
+.button{
+  border: 2px solid #000;
+  border-radius: 100%;
+  padding: 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: #e72525;
+  box-shadow: -3.5px 6px 0 #222;
+  margin-left: 30px;
+}
+.button:active{
+  box-shadow: inset -2px 4px 0 #222;
+  font-size: 1rem;
+}
+.button > p{
+  transform: rotate(30deg);
+}
+
+.buttons2{
+  position: absolute;
+  bottom: 15%;
+  left: 45%;
+}
+.button2{
+  transform: rotate(-35deg);
+  background-color: #000;
+  color: #bebcb8;
+  border-radius: 100%;
+  padding: 5px;
+  box-shadow: -3.5px 6px 0 #222;
+}
+.button2:active{
+  box-shadow: inset -2px 0px 0 #222;
+  font-size: 0.7rem;
+}
+.bImg{
+  position: absolute;
+  top: 64%;
+  left: 30%;
+}
+.som{
+  position: absolute;
+  left: 66%;
+  bottom: 6%;
+}
+
+
+#right-container{
+  display: block;
+  height: 900px;
+  width: 400px;
+  margin-top: 1.4rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
+  background: transparent;
+  justify-content: space-between;
+}
+.fundoStatus{
+  margin-top: 50px;
+}
+.statusPokemon{
+  background-color: #444443;
+  height: 15%;
+  width: 90%;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+.tipo{
+  background-color: #444443;
+  height: 20%;
+  width: 90%;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  margin: 40px 10px 0px 20px;
+  text-align: center;
+  color: #fff;
+}
+.fraco > h3{
+  margin-bottom: 10px;
+}
+
+.tipo2{
+  background-color: #444443;
+  height: 20%;
+  width: 90%;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  margin: 40px 10px 0px 20px;
+  text-align: center;
+  color: #fff;
+}
+.forte > h3{
+  margin-bottom: 10px;
+}
+
+.evolve{
+  background-color: #444443;
+  height: 20%;
+  width: 90%;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  margin: 40px 10px 0px 20px;
+  text-align: center;
+  color: #fff;
+}
+.evolve > span{
+  color: #fff;
+}
+h3{
+  border-bottom: 1px solid #333;
+}
+
+.Normal{
+  background-color: #A8A878;
+  padding: 2px;
+  width: 60%;
+ border-radius: 10px;
+ border: 1px solid #333;
+ margin: 2px 0px 2px 60px;
+ 
+}
+.Lutador{
+ background-color: #C03028;
+ padding: 2px;
+ width: 60%;
+ border-radius: 10px;
+ border: 1px solid #333;
+ margin: 2px 0px 2px 60px;
+}
+.Voador{
+ background-color: #A890F0;
+ padding: 2px;
+ width: 60%;
+ border-radius: 10px;
+ border: 1px solid #333;
+ margin: 2px 0px 2px 60px;
+}
+.Veneno{
+ background-color: #A040A0;
+ padding: 2px;
+ width: 60%;
+ border-radius: 10px;
+ border: 1px solid #333;
+ margin: 2px 0px 2px 60px;
+}
+.Solo{
+ background-color: #E0C068;
+ padding: 2px;
+ width: 60%;
+ border-radius: 10px;
+ border: 1px solid #333;
+ margin: 2px 0px 2px 60px;
+}
+.Pedra{
+ background-color: #B8A038;
+ padding: 2px;
+ width: 60%;
+ border-radius: 10px;
+ border: 1px solid #333;
+ margin: 2px 0px 2px 60px;
+}
+.Inseto{
+ background-color: #A8B820;
+ padding: 2px;
+ width: 60%;
+ border-radius: 10px;
+ border: 1px solid #333;
+ margin: 2px 0px 2px 60px;
+}
+.Fantasma{
+ background-color: #705898;
+ padding: 2px;
+ width: 60%;
+ border-radius: 10px;
+ border: 1px solid #333;
+ margin: 2px 0px 2px 60px;
+}
+.Aço{
+ background-color: #B8B8D0;
+ padding: 2px;
+ width: 60%;
+ border-radius: 10px;
+ border: 1px solid #333;
+ margin: 2px 0px 2px 60px;
+}
+.Fogo{
+ background-color: #F08030;
+ padding: 2px;
+ width: 60%;
+ border-radius: 10px;
+ border: 1px solid #333;
+ margin: 2px 0px 2px 60px;
+ padding: 2px;
+}
+.Água{
+ background-color: #6890F0;
+ padding: 2px;
+ width: 60%;
+ border-radius: 10px;
+ border: 1px solid #333;
+ margin: 2px 0px 2px 60px;
+}
+.Planta{
+ background-color: #78C850;
+ padding: 2px;
+ width: 60%;
+ border-radius: 10px;
+ border: 1px solid #333;
+ margin: 2px 0px 2px 60px;
+}
+.Elétrico{
+ background-color: #F8D030;
+ padding: 2px;
+ width: 60%;
+ border-radius: 10px;
+ border: 1px solid #333;
+ margin: 2px 0px 2px 60px;
+}
+.Psíquico{
+ background-color: #F85888;
+ padding: 2px;
+ width: 60%;
+ border-radius: 10px;
+ border: 1px solid #333;
+ margin: 2px 0px 2px 60px;
+}
+.Gelo{
+ background-color: #98D8D8;
+ padding: 2px;
+ width: 60%;
+ border-radius: 10px;
+ border: 1px solid #333;
+ margin: 2px 0px 2px 60px;
+}
+.Dragão{
+ background-color: #7038F8;
+ padding: 2px;
+ width: 60%;
+ border-radius: 10px;
+ border: 1px solid #333;
+ margin: 2px 0px 2px 60px;
+}
+.Sombrio{
+ background-color: #705848;
+ padding: 2px;
+ width: 60%;
+ border-radius: 10px;
+ border: 1px solid #333;
+ margin: 2px 0px 2px 60px;
+}
+.Fada{
+ background-color: #EE99AC;
+ padding: 2px;
+ width: 60%;
+ border-radius: 10px;
+ border: 1px solid #333;
+ margin: 2px 0px 2px 60px;
+}
